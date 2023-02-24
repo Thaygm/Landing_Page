@@ -1,0 +1,68 @@
+@use 'variaveis';
+@use 'body';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$cordeFundo;
+}
+
+@mixin branco($fontSize: 15px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corBotaoeTextoPrincipal;
+
+    .branco--Xbig {
+        @include branco(24px);
+    }
+
+    .branco--big {
+        @include branco(20px);
+    }
+
+    .branco--Xbig {
+        @include branco;
+    }
+
+    .branco--Xbig {
+        @include branco(12px)
+    }
+
+}
+
+@mixin cinza($fontSize: 15px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corBotaoeTextoPrincipal;
+
+    .cinza--big {
+        @include cinza(20px);
+    }
+
+    .cinza--Xbig {
+        @include cinza;
+    }
+
+    .cinza--Xbig {
+        @include cinza(12px)
+    }
+
+}
+
