@@ -1,15 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vingadores - O Ultimato</title>
+    <title>Document</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
+
 <body>
-    <section class="body">
-        
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./src/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">ínício</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Pesquisa</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Filmes</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Séries</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Originais</a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./src/images/icons/Marvel-Studios.png" alt="Vingadores Ultimato">
+            </div>
+            <div class="hero__icons">
+                <div class="hero__content__age">
+                    <img src="./src/images/icons/classificação-Indicativa.png" alt="classificação-Indicativa">
+                </div>
+                <div class="hero__content__audiodescription">
+                    <img src="./src/images/icons/Audiodescricao.png" alt="Audiodescricao">
+                </div>
+                <div class="hero__content__closeCaption">
+                    <img src="./src/images/icons/Close-Caption.png" alt="Close-Caption">
+                </div>
+                <span>
+                    2019 • 3h 5min
+                </span>
+            </div>
+            <h3 class="description-1">
+                Ficção científica, Fantasia, Super-Heróis, Ação e aventura
+            </h3>
+            <ul class="hero__content__buttons">
+                <li class="hero__content__buttons__play">
+                    <button class="button">Assistir</button>
+                </li>
+                <li class="hero__content__buttons__trailer">
+                    <button class="button button--dark">trailer</button>
+                </li>
+            </ul>
+            <p class="description__movie">
+                No final épico da Saga do Infinito, os Vingadores enfrentam Thanos. Quando eventos devastadores eliminam
+                metade da população mundial e dividem suas fileiras, o resto dos heróis lutam para avançar. Mas eles
+                devem se unir para restaurar a ordem e a harmonia no universo e trazer de volta seus entes queridos.
+            </p>
+        </div>
     </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="continue" class="shows__tabs__button shows__tabs__button--is-active">
+                Continue assistindo
+            </button>
+            <button data-tab-button="soon" class="shows__tabs__button">
+                Em breve
+            </button>
+            <button data-tab-button="popular" class="shows__tabs__button">
+                Mais populares
+            </button>
+            <button data-tab-button="recommended" class="shows__tabs__button">
+                Recomendados
+            </button>
+        </nav>
+        <ul data-tab-id="continue" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./src/images/continue/avatar.jpg" alt="Avatar">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/continue/pantera_negra.jpg" alt="Pantera Negra">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/continue/valente.jpg" alt="Valente">
+            </li>
+        </ul>
+
+        <ul data-tab-id="soon" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/soon/crossover.jpg" alt="Crossover">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/soon/doggie.jpg" alt="Doggie Kamealoha">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/soon/invasao_secreta.jpg" alt="Invasão Secreta">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/soon/miley_cyrus.jpg" alt="Miley Cyrus">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/soon/percy.jpg" alt="Percy Jackson">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/soon/peter_pan.jpg" alt="Peter Pand & Wendy">
+            </li>
+        </ul>
+
+        <ul data-tab-id="popular" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/popular/encanto.jpg" alt="Encanto">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/popular/era.jpg" alt="Era uma vez">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/popular/frozen_ii.jpg" alt="Frozen 2">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/popular/luca.jpg" alt="Luca">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/popular/mandalorian.jpg" alt="Mandalorian">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/popular/moana.jpg" alt="Moana">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/popular/wakanda.jpg" alt="Wakanda Forever">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/popular/ratatouille.jpg" alt="Ratatouille">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/popular/viva.jpg" alt="Viva">
+            </li>
+        </ul>
+
+        <ul data-tab-id="recommended" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/recommended/cruela.jpg" alt="Cruella">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/recommended/eternos.jpg" alt="Eternos">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/recommended/homem_formiga.jpg" alt="Homem Formiga & Vespa">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/recommended/john_carter.jpg" alt="John Carter">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/recommended/lightyear.jpg" alt="Lightyear">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/recommended/loki.jpg" alt="Loki">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/recommended/mandalorian.jpg" alt="Mandalorian">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/recommended/thor.jpg" alt="Thor Amor e trovão">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/recommended/viuva_negra.jpg" alt="Viúva-Negra">
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./src/images/disneyplus.svg" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./src/images/icons/globe.svg" alt="Globo do mungo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="footer__text">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="footer__text">Politica de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="footer__text">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="footer__text">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="footer__text">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="footer__text">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="footer__text">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="footer__text">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+            <p class="footer__text">
+                © Disney. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
 </body>
+
 </html>
